@@ -18,21 +18,16 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 
 ## 💻 Program
 ```
+import numpy as np
 import pandas as pd
-student_data1 = pd.DataFrame(eval(input()))
-student_data2 = pd.DataFrame(eval(input()))
-print("Original DataFrames:")
-print(student_data1)
-print("-------------------------------------")
-print(student_data2)
-print()
-result_data = pd.concat([student_data1,student_data2], axis=0)
-print("Join the said two dataframes along rows:")
-print(result_data)
+exam_data=eval(input())
+lab=np.array(eval(input()))
+df=pd.DataFrame(exam_data,index=lab)
+print(df)
 ```
 
 ## Output
-<img width="1133" height="749" alt="Screenshot 2025-10-19 130944" src="https://github.com/user-attachments/assets/e0721ed3-bbf8-429e-8dc8-ab4e3dcb81be" />
+<img width="1261" height="321" alt="Screenshot 2025-10-19 131158" src="https://github.com/user-attachments/assets/70645678-9f39-4d0b-895b-cc6bcb2c1de8" />
 
 ## Result
-Thus, the program to join two Pandas DataFrames along rows was executed successfully.
+Thus, the program to create and display a Pandas DataFrame with custom index labels was executed successfully.
